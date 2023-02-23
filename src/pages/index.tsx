@@ -1,10 +1,13 @@
 import { type NextPage } from "next";
+import MainMenu from "~/pages/components/MainMenu";
+import Inbox from "~/pages/components/Inbox";
 const Home: NextPage = () => {
 
   return (
-    <>
-      <h1 className="text-2xl text-red-200">Home</h1>
-    </>
+    <div className="flex">
+      <MainMenu></MainMenu>
+      <Inbox></Inbox>
+    </div>
   )
 };
 
